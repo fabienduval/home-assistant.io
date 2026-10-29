@@ -166,6 +166,12 @@ If a scene or automation sets both the position and the tilt of a cover, Home As
 
 To move a cover to a target position and tilt in one smooth motion, use the [Set cover position and tilt](/actions/overkiz.set_cover_position_and_tilt/) action instead.
 
+### Water heater away mode with a fixed one-year end date
+
+On supported Atlantic/Thermor water heaters (for example the Thermor Malicio), the [Set away mode](/actions/water_heater.set_away_mode/) action always sets away mode to end one year from now. There is no way to pick a different end date and time through this action.
+
+To put the water heater in away mode until a specific date and time instead, use the [Set away mode until](/actions/overkiz.set_away_mode_until/) action.
+
 ### Troubleshooting connection issues with the local API
 
 If your entities frequently become unavailable for short periods, this usually indicates connection problems between Home Assistant and your gateway. To improve reliability, try connecting to your gateway using its IP address instead of the `gateway-xxxx-xxxx-xxx.local` hostname.
